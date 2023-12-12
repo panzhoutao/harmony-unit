@@ -1,10 +1,12 @@
 {
   "app": {
     "bundleName": "com.mrpan.harmony_unit",
-    "vendor": "example",
-    "versionCode": 1000000,
+    "vendor": "mr.pan",
+    "versionCode": 2023112801,
     "versionName": "1.0.0",
     "icon": "$media:app_icon",
     "label": "$string:app_name"
   }
 }
+
+// versionCode 1000000
