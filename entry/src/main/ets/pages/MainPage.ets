@@ -1,5 +1,6 @@
 import CommonConstants from '../common/constants/CommonConstants';
 import Home from '../view/Home';
+import ModuleTab from '../view/ModuleTab';
 import Setting from '../view/Setting';
 @Entry
 @Component
@@ -32,7 +33,7 @@ struct MainPage {
       controller: this.tabsController
     }) {
       TabContent() {
-        Home()
+        ModuleTab()
       }
       .padding({ left: $r('app.float.mainPage_padding'), right: $r('app.float.mainPage_padding') })
       .backgroundColor($r('app.color.mainPage_backgroundColor'))

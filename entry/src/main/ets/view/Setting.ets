@@ -1,18 +1,3 @@
-/*
- * Copyright (c) 2022 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import CommonConstants from '../common/constants/CommonConstants';
 import ItemData from '../viewmodel/ItemData';
 import mainViewModel from '../viewmodel/MainViewModel';
@@ -32,13 +17,9 @@ export default struct Setting {
           .fontSize($r('app.float.normal_text_size'))
       }
 
-      if (item.others === null) {
-        Image($r('app.media.right_grey'))
-          .width($r('app.float.setting_jump_width'))
-          .height($r('app.float.setting_jump_height'))
-      } else {
-        Toggle({ type: ToggleType.Switch, isOn: false })
-      }
+      Image($r('app.media.right_grey'))
+        .width($r('app.float.setting_jump_width'))
+        .height($r('app.float.setting_jump_height'))
     }
     .justifyContent(FlexAlign.SpaceBetween)
     .width(CommonConstants.FULL_PARENT)
@@ -110,17 +91,6 @@ export default struct Setting {
         })
         .borderRadius($r('app.float.setting_list_borderRadius'))
         .padding({ top: $r('app.float.setting_list_padding'), bottom: $r('app.float.setting_list_padding') })
-
-        Blank()
-
-        Button($r('app.string.setting_button'), { type: ButtonType.Capsule })
-          .width(CommonConstants.BUTTON_WIDTH)
-          .height($r('app.float.login_button_height'))
-          .fontSize($r('app.float.normal_text_size'))
-          .fontColor($r('app.color.setting_button_fontColor'))
-          .fontWeight(FontWeight.Medium)
-          .backgroundColor($r('app.color.setting_button_backgroundColor'))
-          .margin({ bottom: $r('app.float.setting_button_bottom')})
       }
       .height(CommonConstants.FULL_PARENT)
     }
