@@ -28,5 +28,4 @@ export default class ComponentEntity {
     this.describe = describe;
   }
 
-
 }
